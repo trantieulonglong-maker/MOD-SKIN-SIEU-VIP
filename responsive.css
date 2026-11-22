@@ -1,0 +1,58 @@
+/* Toàn bộ @media của bản gốc. Phải nạp SAU style.css để giữ đúng thứ tự cascade. */
+
+/* ---- Giao diện chính ---- */
+@media (max-width: 860px) {
+  .shell { width: calc(100% - 36px); }
+  .workspace { grid-template-columns: 1fr; }
+  .stage { position: relative; top: 0px; }
+  #viewport { height: 470px; }
+  .intro { padding: 26px 0px 22px; }
+  .topbar { height: 72px; }
+  .panel { padding: 22px; }
+  .hint { max-width: 240px; }
+  h1 { font-size: 29px; }
+}
+
+@media (max-width: 440px) {
+  .shell { width: calc(100% - 24px); }
+  .platform { font-size: 10px; }
+  .brand { font-size: 11px; letter-spacing: 1px; }
+  .brandmark { width: 30px; height: 30px; }
+  .count { display: none; }
+  #viewport { height: 375px; }
+  .watermark { font-size: 72px; }
+  .stage-head { top: 17px; left: 20px; right: 20px; }
+  .stage-footer { padding: 13px 16px; }
+  .hint { max-width: 200px; font-size: 10px; }
+  .small-button { padding: 7px 8px; }
+  .panel { padding: 18px; }
+  .form-row { grid-template-columns: 78px 1fr; gap: 8px; }
+  .action-note { margin-left: 86px; }
+  .presets { gap: 8px; }
+  .preset { padding: 11px; }
+  .preset-detail { font-size: 9px; }
+  footer { flex-direction: column; gap: 5px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}
+
+@media (max-width: 640px) {
+  .choice-grid { grid-template-columns: 1fr; }
+  .version-screen { padding-top: 24px; }
+  .version-card { padding: 18px; }
+}
+
+/* ---- Menu hamburger ---- */
+@media (max-width: 500px) {
+  .fish-top-actions .platform { display: none; }
+  .brand { font-size: 10px; letter-spacing: 1px; }
+}
+
+/* ---- Biểu tượng danh mục ---- */
+@media (max-width: 520px) {
+  .form-row { grid-template-columns: 104px minmax(0px, 1fr); gap: 8px; }
+  .form-row label { gap: 6px; }
+  .row-icon.category-icon { width: 28px; height: 28px; flex-basis: 28px; }
+}
